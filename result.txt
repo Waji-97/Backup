@@ -626,3 +626,4 @@ repair a damaged filesystem, see xfs_repair(8).[0m
 [1m Github upload                            (B[m
 +-----------------------------------------+
 
+[32mBackup file uploaded to Github![0m
