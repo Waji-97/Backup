@@ -627,3 +627,642 @@ repair a damaged filesystem, see xfs_repair(8).[0m
 +-----------------------------------------+
 
 [32mBackup file uploaded to Github![0m
+   _____                         ____     _____           _       _   
+  / ____|                       |___ \   / ____|         (_)     | |  
+ | |  __ _ __ ___  _   _ _ __     __) | | (___   ___ _ __ _ _ __ | |_ 
+ | | |_ | '__/ _ \| | | | '_ \   |__ <   \___ \ / __| '__| | '_ \| __|
+ | |__| | | | (_) | |_| | |_) |  ___) |  ____) | (__| |  | | |_) | |_ 
+  \_____|_|  \___/ \__,_| .__/  |____/  |_____/ \___|_|  |_| .__/ \__| 
+                        | |                                | |        
+                        |_|                                |_|        
+
+*********************************************
+	시스템 점검 스크립트
+*********************************************
+  3조 - 건태 - 차노 - 와지 - 도영 - 상훈
+*********************************************
+
++-----------------------------------------+
+ Thu Feb 16 11:36:42 KST 2023             
+                                         
+[1m OS Details                               (B[m
++-----------------------------------------+
+
+[33mOperating System               :[0m CentOS Linux 7 (Core)
+[33mHostname                       :[0m localhost
+[33mKernel Version                 :[0m 3.10.0-1160.83.1.el7.x86_64
+[33mOS Architecture                :[0m 32 Bit OS
++-----------------------------------------+
+ Thu Feb 16 11:36:42 KST 2023             
+                                         
+[1m CPU Details                              (B[m
++-----------------------------------------+
+
+[33mPhysical CPUs                  :[0m 1
+[33mVirtual CPUs                   :[0m 1
+[33mCPU Cores                      :[0m 1
+[33mCPU Model                      :[0m 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+[33mCPU Architecture               :[0m x86_64
+[33mCPU Usage Percentage           :[0m 6.2%
+[32mOK![0m
+
++-----------------------------------------+
+ Thu Feb 16 11:36:43 KST 2023             
+                                         
+[1m Uptime                                   (B[m
++-----------------------------------------+
+
+[33mSystem  Uptime                 :[0m  11:36:43 up 2 min,  1 user,  load average: 0.22, 0.10, 0.04
+[33mUptime Version                 :[0m uptime from procps-ng 3.3.10
+
++-----------------------------------------+
+ Thu Feb 16 11:36:44 KST 2023             
+                                         
+[1m Kernel Parameters                        (B[m
++-----------------------------------------+
+
+[33mUpdating sysctl.conf Configuration[0m
+
+[32mDone!                         [0m
+
+[33mReloading sysctl.conf Configuration[0m
+
+[32mDone!                         [0m
+
+[32mYour kernel is up to date![0m
+
++-----------------------------------------+
+ Thu Feb 16 11:36:48 KST 2023             
+                                         
+[1m Recent Server Shutdown                   (B[m
++-----------------------------------------+
+
+[33mMost Recent 3 Shutdown Events [0m
+
+shutdown system down  3.10.0-1127.el7. Wed Feb 15 23:58 - 10:17  (10:19)    
+shutdown system down  3.10.0-1127.el7. Wed Feb 15 10:03 - 10:04  (00:00)    
+shutdown system down  3.10.0-1127.el7. Tue Feb 14 15:41 - 09:16  (17:35)    
+
+No log found for the cause of the most recent shutdown.
+
++-----------------------------------------+
+ Thu Feb 16 11:36:49 KST 2023             
+                                         
+[1m Recent Reboots                           (B[m
++-----------------------------------------+
+
+[33mNumber of recent reboots      [0m
+
+5
+
+[33mDetails of last reboot        [0m
+
+reboot   system boot  3.10.0-1160.83.1 Thu Feb 16 11:34 - 11:36  (00:02)    
+
++-----------------------------------------+
+ Thu Feb 16 11:36:50 KST 2023             
+                                         
+[1m Recent Server Access                     (B[m
++-----------------------------------------+
+
+[33mRecent Server Access          [0m
+
+root     pts/0        192.168.1.1      Thu Feb 16 11:34   still logged in   
+reboot   system boot  0.0.0.0          Thu Feb 16 11:34 - 11:36  (00:02)    
+root     pts/0        192.168.1.1      Thu Feb 16 10:17 - crash  (01:17)    
+reboot   system boot  0.0.0.0          Thu Feb 16 10:17 - 11:36  (01:19)    
+root     pts/0        192.168.1.1      Wed Feb 15 23:02 - down   (00:55)    
+
+[33mTime with Most Server Access  [0m
+
+
+      1 root     pts/0        192.168.1.1      Wed Feb 15 23:02 - down   (00:55)    
+
++-----------------------------------------+
+ Thu Feb 16 11:36:51 KST 2023             
+                                         
+[1m 5 Most CPU and RAM consumers             (B[m
++-----------------------------------------+
+
+[33m5 Most CPU Consuming Processes[0m 
+
+/usr/lib/systemd/systemd 0.7%
+/usr/bin/python2 0.3%
+[kworker/0:1] 0.2%
+/usr/sbin/crond 0.2%
+[rcu_sched] 0.1%
+
+[33m5 Most RAM Consuming Processes[0m 
+
+/usr/bin/python2 2.9%
+/usr/bin/python2 1.7%
+/usr/lib/polkit-1/polkitd 1.3%
+/usr/sbin/NetworkManager 1.0%
+/usr/lib/systemd/systemd 0.6%
+
++-----------------------------------------+
+ Thu Feb 16 11:36:52 KST 2023             
+                                         
+[1m SWAP Memory & RAM                        (B[m
++-----------------------------------------+
+
+[33mTotal Swap Memory              :[0m 2048 MiB, 2 GiB
+[33mFree Swap Memory               :[0m 2048 MiB, 2 GiB
+[32mOK![0m
+
++-----------------------------------------+
+ Thu Feb 16 11:36:53 KST 2023             
+                                         
+[1m Installed Pacakges Updates               (B[m
++-----------------------------------------+
+
+[33mList of Packages Requiring Updates[0m
+
+[32m0[0m
+
+[32mYour packages are up to date[0m
++-----------------------------------------+
+ Thu Feb 16 11:36:59 KST 2023             
+                                         
+[1m Checking & setting up Cronie             (B[m
++-----------------------------------------+
+
+Cronie is already your friend!
+
+[33mCurrent Cron Jobs              :[0m 0 4 * * * /root/Backup/final.sh
+
++-----------------------------------------+
+ Thu Feb 16 11:37:01 KST 2023             
+                                         
+[1m Rotating Logs                            (B[m
++-----------------------------------------+
+
+[32mLogs rotated successfully!    [0m
+
++-----------------------------------------+
+ Thu Feb 16 11:37:02 KST 2023             
+                                         
+[1m Disk File & Mount                        (B[m
++-----------------------------------------+
+
+[33mChecking Disk File System     [0m
+
+
+fsck from util-linux 2.23.2
+/sbin/fsck.xfs: XFS file system.
+
+[33mChecking Mount Status         [0m
+
+
+sysfs                    on  /sys                             type  sysfs       (rw,nosuid,nodev,noexec,relatime,seclabel)
+proc                     on  /proc                            type  proc        (rw,nosuid,nodev,noexec,relatime)
+devtmpfs                 on  /dev                             type  devtmpfs    (rw,nosuid,seclabel,size=485776k,nr_inodes=121444,mode=755)
+securityfs               on  /sys/kernel/security             type  securityfs  (rw,nosuid,nodev,noexec,relatime)
+tmpfs                    on  /dev/shm                         type  tmpfs       (rw,nosuid,nodev,seclabel)
+devpts                   on  /dev/pts                         type  devpts      (rw,nosuid,noexec,relatime,seclabel,gid=5,mode=620,ptmxmode=000)
+tmpfs                    on  /run                             type  tmpfs       (rw,nosuid,nodev,seclabel,mode=755)
+tmpfs                    on  /sys/fs/cgroup                   type  tmpfs       (ro,nosuid,nodev,noexec,seclabel,mode=755)
+cgroup                   on  /sys/fs/cgroup/systemd           type  cgroup      (rw,nosuid,nodev,noexec,relatime,seclabel,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)
+pstore                   on  /sys/fs/pstore                   type  pstore      (rw,nosuid,nodev,noexec,relatime)
+cgroup                   on  /sys/fs/cgroup/cpu,cpuacct       type  cgroup      (rw,nosuid,nodev,noexec,relatime,seclabel,cpuacct,cpu)
+cgroup                   on  /sys/fs/cgroup/net_cls,net_prio  type  cgroup      (rw,nosuid,nodev,noexec,relatime,seclabel,net_prio,net_cls)
+cgroup                   on  /sys/fs/cgroup/memory            type  cgroup      (rw,nosuid,nodev,noexec,relatime,seclabel,memory)
+cgroup                   on  /sys/fs/cgroup/cpuset            type  cgroup      (rw,nosuid,nodev,noexec,relatime,seclabel,cpuset)
+cgroup                   on  /sys/fs/cgroup/perf_event        type  cgroup      (rw,nosuid,nodev,noexec,relatime,seclabel,perf_event)
+cgroup                   on  /sys/fs/cgroup/devices           type  cgroup      (rw,nosuid,nodev,noexec,relatime,seclabel,devices)
+cgroup                   on  /sys/fs/cgroup/hugetlb           type  cgroup      (rw,nosuid,nodev,noexec,relatime,seclabel,hugetlb)
+cgroup                   on  /sys/fs/cgroup/blkio             type  cgroup      (rw,nosuid,nodev,noexec,relatime,seclabel,blkio)
+cgroup                   on  /sys/fs/cgroup/freezer           type  cgroup      (rw,nosuid,nodev,noexec,relatime,seclabel,freezer)
+cgroup                   on  /sys/fs/cgroup/pids              type  cgroup      (rw,nosuid,nodev,noexec,relatime,seclabel,pids)
+configfs                 on  /sys/kernel/config               type  configfs    (rw,relatime)
+/dev/mapper/centos-root  on  /                                type  xfs         (rw,relatime,seclabel,attr2,inode64,noquota)
+selinuxfs                on  /sys/fs/selinux                  type  selinuxfs   (rw,relatime)
+systemd-1                on  /proc/sys/fs/binfmt_misc         type  autofs      (rw,relatime,fd=24,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=13814)
+hugetlbfs                on  /dev/hugepages                   type  hugetlbfs   (rw,relatime,seclabel)
+mqueue                   on  /dev/mqueue                      type  mqueue      (rw,relatime,seclabel)
+debugfs                  on  /sys/kernel/debug                type  debugfs     (rw,relatime)
+fusectl                  on  /sys/fs/fuse/connections         type  fusectl     (rw,relatime)
+/dev/sda1                on  /boot                            type  xfs         (rw,relatime,seclabel,attr2,inode64,noquota)
+/dev/sdb1                on  /gluster2                        type  xfs         (rw,relatime,seclabel,attr2,inode64,noquota)
+tmpfs                    on  /run/user/0                      type  tmpfs       (rw,nosuid,nodev,relatime,seclabel,size=99548k,mode=700)
+
++-----------------------------------------+
+ Thu Feb 16 11:37:03 KST 2023             
+                                         
+[1m Disk Usage                               (B[m
++-----------------------------------------+
+
+[33mChecking Disk Usage           [0m
+
+
+Filesystem               Size  Used Avail Use% Mounted on
+devtmpfs                 475M     0  475M   0% /dev
+tmpfs                    487M     0  487M   0% /dev/shm
+tmpfs                    487M  7.6M  479M   2% /run
+tmpfs                    487M     0  487M   0% /sys/fs/cgroup
+/dev/mapper/centos-root   17G  1.7G   16G  10% /
+/dev/sda1               1014M  168M  847M  17% /boot
+/dev/sdb1                247M   13M  234M   6% /gluster2
+tmpfs                     98M     0   98M   0% /run/user/0
+
++-----------------------------------------+
+ Thu Feb 16 11:37:04 KST 2023             
+                                         
+[1m Network status + IP address              (B[m
++-----------------------------------------+
+
+[33mNetwork Status                 :[0m The network is down.
+[33mIP Address                     :[0m 192.168.1.170 
+
++-----------------------------------------+
+ Thu Feb 16 11:37:06 KST 2023             
+                                         
+[1m Network Port Connections                 (B[m
++-----------------------------------------+
+
+[33mNetwork Port Connections      [0m
+
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 0.0.0.0:ssh             0.0.0.0:*               LISTEN     
+tcp        0      0 localhost:smtp          0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:sunrpc          0.0.0.0:*               LISTEN     
+tcp        0      0 localhost.localdo:41646 20.200.245.247:https    TIME_WAIT  
+tcp        0      0 localhost.localdo:44980 39.155.141.16:http      TIME_WAIT  
+tcp        0      0 localhost.localdo:41656 srv2.ftp.ne.jp:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:55292 linux.domainesia.:https TIME_WAIT  
+tcp        0      0 localhost.localdo:50522 45.14.106.5:http        TIME_WAIT  
+tcp        0      0 localhost.localdo:50682 45.14.106.5:http        TIME_WAIT  
+tcp        0      0 localhost.localdo:38998 58.125.240.179:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:34612 103.22.220.133:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:42564 113.29.189.165:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:39058 58.125.240.179:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:53362 mirror.nevacloud.:https TIME_WAIT  
+tcp        0      0 localhost.localdo:42614 113.29.189.165:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:38216 103.77.111.8:https      TIME_WAIT  
+tcp        0      0 localhost.localdo:36852 ftp.yz.yamagata-u.:http TIME_WAIT  
+tcp        0      0 localhost.localdo:39202 58.125.240.179:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:38788 riksun.riken.go.j:https TIME_WAIT  
+tcp        0      0 localhost.localdo:39114 nas1800.ftp.pub.2i:http TIME_WAIT  
+tcp        0      0 localhost.localdo:52464 ftp.tsukuba.wide.a:http TIME_WAIT  
+tcp        0      0 localhost.localdo:39216 58.125.240.179:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:32906 125.209.216.167:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:50770 45.14.106.5:http        TIME_WAIT  
+tcp        0      0 localhost.localdo:43206 180.150.156.88:https    TIME_WAIT  
+tcp        0      0 localhost.localdo:34810 103.22.220.133:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:41698 srv2.ftp.ne.jp:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:60570 109.224.14.75:http      TIME_WAIT  
+tcp        0      0 localhost.localdo:42740 113.29.189.165:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:45104 39.155.141.16:http      TIME_WAIT  
+tcp        0      0 localhost.localdo:60304 109.224.14.75:http      TIME_WAIT  
+tcp        0      0 localhost.localdo:45172 39.155.141.16:http      TIME_WAIT  
+tcp        0      0 localhost.localdo:60428 109.224.14.75:http      TIME_WAIT  
+tcp        0      0 localhost.localdo:33088 125.209.216.167:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:43144 180.150.156.88:https    TIME_WAIT  
+tcp        0      0 localhost.localdo:55406 linux.domainesia.:https TIME_WAIT  
+tcp        0      0 localhost.localdo:39168 nas1800.ftp.pub.2i:http TIME_WAIT  
+tcp        0      0 localhost.localdo:41642 20.200.245.247:https    TIME_WAIT  
+tcp        0      0 localhost.localdo:38034 ftp.nara.wide.ad.j:http TIME_WAIT  
+tcp        0      0 localhost.localdo:34486 103.22.220.133:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:50972 ftp.jaist.ac.jp:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:39040 riksun.riken.go.j:https TIME_WAIT  
+tcp        0      0 localhost.localdo:42228 103.29.148.124:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:45050 39.155.141.16:http      TIME_WAIT  
+tcp        0      0 localhost.localdo:52584 ftp.tsukuba.wide.a:http TIME_WAIT  
+tcp        0      0 localhost.localdo:33186 ftp.yz.yamagata-u.:http TIME_WAIT  
+tcp        0      0 localhost.localdo:50506 45.14.106.5:http        TIME_WAIT  
+tcp        0      0 localhost.localdo:42498 113.29.189.165:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:40606 riksun.riken.go.jp:http TIME_WAIT  
+tcp        0      0 localhost.localdo:38178 101.6.15.130:https      TIME_WAIT  
+tcp        0      0 localhost.localdo:32936 ftp.yz.yamagata-u.:http TIME_WAIT  
+tcp        0      0 localhost.localdo:38936 58.125.240.179:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:40472 riksun.riken.go.jp:http TIME_WAIT  
+tcp        0      0 localhost.localdo:34782 103.22.220.133:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:36908 ftp.yz.yamagata-u.:http TIME_WAIT  
+tcp        0      0 localhost.localdo:53558 mirror.nevacloud.:https FIN_WAIT2  
+tcp        0      0 localhost.localdo:51034 ftp.jaist.ac.jp:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:38306 ftp.nara.wide.ad.j:http TIME_WAIT  
+tcp        0      0 localhost.localdo:53302 mirror.nevacloud.:https TIME_WAIT  
+tcp        0      0 localhost.localdo:43390 180.150.156.88:https    TIME_WAIT  
+tcp        0      0 localhost.localdo:33058 ftp.yz.yamagata-u.:http TIME_WAIT  
+tcp        0      0 localhost.localdo:38350 103.77.111.8:https      TIME_WAIT  
+tcp        0      0 localhost.localdo:38244 101.6.15.130:https      TIME_WAIT  
+tcp        0      0 localhost.localdo:37152 ftp.yz.yamagata-u.:http TIME_WAIT  
+tcp        0      0 localhost.localdo:42040 103.29.148.124:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:38372 ftp.nara.wide.ad.j:http TIME_WAIT  
+tcp        0      0 localhost.localdo:40780 riksun.riken.go.jp:http TIME_WAIT  
+tcp        0      0 localhost.localdo:51264 lb2.upic.me:https       TIME_WAIT  
+tcp        0      0 localhost.localdo:43332 180.150.156.88:https    TIME_WAIT  
+tcp        0      0 localhost.localdo:33180 125.209.216.167:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:55358 linux.domainesia.:https TIME_WAIT  
+tcp        0      0 localhost.localdo:39246 nas1800.ftp.pub.2i:http TIME_WAIT  
+tcp        0      0 localhost.localdo:50580 45.14.106.5:http        TIME_WAIT  
+tcp        0      0 localhost.localdo:45296 39.155.141.16:http      TIME_WAIT  
+tcp        0      0 localhost.localdo:41594 srv2.ftp.ne.jp:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:42176 103.29.148.124:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:53430 mirror.nevacloud.:https TIME_WAIT  
+tcp        0      0 localhost.localdo:41632 srv2.ftp.ne.jp:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:33114 ftp.yz.yamagata-u.:http TIME_WAIT  
+tcp        0      0 localhost.localdo:55604 linux.domainesia.:https TIME_WAIT  
+tcp        0      0 localhost.localdo:38288 103.77.111.8:https      TIME_WAIT  
+tcp        0      0 localhost.localdo:38048 101.6.15.130:https      TIME_WAIT  
+tcp        0      0 localhost.localdo:60368 109.224.14.75:http      TIME_WAIT  
+tcp        0      0 localhost.localdo:41524 srv2.ftp.ne.jp:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:34546 103.22.220.133:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:34610 103.22.220.133:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:38152 103.77.111.8:https      TIME_WAIT  
+tcp        0      0 localhost.localdo:33218 125.209.216.167:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:51152 ftp.jaist.ac.jp:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:41720 srv2.ftp.ne.jp:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:38136 ftp.nara.wide.ad.j:http TIME_WAIT  
+tcp        0      0 localhost.localdo:60600 ftp.yz.yamagata-u:https TIME_WAIT  
+tcp        0      0 localhost.localdo:34688 103.22.220.133:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:43268 180.150.156.88:https    TIME_WAIT  
+tcp        0      0 localhost.localdoma:ssh 192.168.1.1:53529       ESTABLISHED
+tcp        0      0 localhost.localdo:53500 mirror.nevacloud.:https TIME_WAIT  
+tcp        0      0 localhost.localdo:51104 ftp.jaist.ac.jp:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:50630 45.14.106.5:http        TIME_WAIT  
+tcp        0      0 localhost.localdo:34732 103.22.220.133:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:52710 ftp.tsukuba.wide.a:http TIME_WAIT  
+tcp        0      0 localhost.localdo:38242 ftp.nara.wide.ad.j:http TIME_WAIT  
+tcp        0      0 localhost.localdo:50558 45.14.106.5:http        TIME_WAIT  
+tcp        0      0 localhost.localdo:51168 ftp.jaist.ac.jp:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:51074 ftp.jaist.ac.jp:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:38116 101.6.15.130:https      TIME_WAIT  
+tcp        0      0 localhost.localdo:32966 125.209.216.167:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:41580 srv2.ftp.ne.jp:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:42560 113.29.189.165:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:33022 125.209.216.167:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:33114 125.209.216.167:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:39076 58.125.240.179:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:33168 125.209.216.167:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:37110 ftp.yz.yamagata-u.:http TIME_WAIT  
+tcp        0      0 localhost.localdo:52656 ftp.tsukuba.wide.a:http TIME_WAIT  
+tcp        0      0 localhost.localdo:50946 ftp.jaist.ac.jp:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:39282 58.125.240.179:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:43446 180.150.156.88:https    TIME_WAIT  
+tcp        0      0 localhost.localdo:39128 58.125.240.179:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:39148 58.125.240.179:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:51202 ftp.jaist.ac.jp:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:51386 lb2.upic.me:https       TIME_WAIT  
+tcp        0      0 localhost.localdo:50816 45.14.106.5:http        TIME_WAIT  
+tcp        0      0 localhost.localdo:38926 riksun.riken.go.j:https TIME_WAIT  
+tcp        0      0 localhost.localdo:52690 ftp.tsukuba.wide.a:http TIME_WAIT  
+tcp        0      0 localhost.localdo:50642 45.14.106.5:http        TIME_WAIT  
+tcp        0      0 localhost.localdo:40728 riksun.riken.go.jp:http TIME_WAIT  
+tcp        0      0 localhost.localdo:42626 113.29.189.165:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:52594 ftp.tsukuba.wide.a:http TIME_WAIT  
+tcp        0      0 localhost.localdo:33046 125.209.216.167:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:42702 113.29.189.165:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:32962 125.209.216.167:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:39002 nas1800.ftp.pub.2i:http TIME_WAIT  
+tcp        0      0 localhost.localdo:42750 113.29.189.165:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:33228 125.209.216.167:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:34736 103.22.220.133:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:45240 39.155.141.16:http      TIME_WAIT  
+tcp        0      0 localhost.localdo:60616 109.224.14.75:http      TIME_WAIT  
+tcp        0      0 localhost.localdo:39046 nas1800.ftp.pub.2i:http TIME_WAIT  
+tcp        0      0 localhost.localdo:38974 riksun.riken.go.j:https TIME_WAIT  
+tcp        0      0 localhost.localdo:34554 103.22.220.133:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:52436 ftp.tsukuba.wide.a:http TIME_WAIT  
+tcp        0      0 localhost.localdo:52624 ftp.tsukuba.wide.a:http TIME_WAIT  
+tcp        0      0 localhost.localdo:51010 ftp.jaist.ac.jp:http    TIME_WAIT  
+tcp        0      0 localhost.localdo:51128 lb2.upic.me:https       TIME_WAIT  
+tcp        0      0 localhost.localdo:41644 20.200.245.247:https    TIME_WAIT  
+tcp        0      0 localhost.localdo:55474 linux.domainesia.:https TIME_WAIT  
+tcp        0      0 localhost.localdo:41466 srv2.ftp.ne.jp:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:41986 103.29.148.124:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:50738 45.14.106.5:http        TIME_WAIT  
+tcp        0      0 localhost.localdo:39272 58.125.240.179:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:51190 lb2.upic.me:https       TIME_WAIT  
+tcp        0      0 localhost.localdo:42816 113.29.189.165:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:52522 ftp.tsukuba.wide.a:http TIME_WAIT  
+tcp        0      0 localhost.localdo:34668 103.22.220.133:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:41454 srv2.ftp.ne.jp:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:41504 srv2.ftp.ne.jp:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:42684 113.29.189.165:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:39100 riksun.riken.go.j:https TIME_WAIT  
+tcp        0      0 localhost.localdo:32996 ftp.yz.yamagata-u.:http TIME_WAIT  
+tcp        0      0 localhost.localdo:39020 58.125.240.179:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:42806 113.29.189.165:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:55534 linux.domainesia.:https TIME_WAIT  
+tcp        0      0 localhost.localdo:51318 lb2.upic.me:https       TIME_WAIT  
+tcp        0      0 localhost.localdo:38404 103.77.111.8:https      TIME_WAIT  
+tcp        0      0 localhost.localdo:38160 ftp.nara.wide.ad.j:http TIME_WAIT  
+tcp        0      0 localhost.localdo:60512 109.224.14.75:http      TIME_WAIT  
+tcp        0      0 localhost.localdo:38848 riksun.riken.go.j:https TIME_WAIT  
+tcp        0      0 localhost.localdo:42112 103.29.148.124:http     TIME_WAIT  
+tcp        0      0 localhost.localdo:52526 ftp.tsukuba.wide.a:http TIME_WAIT  
+tcp        0      0 localhost.localdo:37986 101.6.15.130:https      TIME_WAIT  
+tcp        0      0 localhost.localdo:37080 ftp.yz.yamagata-u.:http TIME_WAIT  
+tcp        0      0 localhost.localdo:37192 ftp.yz.yamagata-u.:http TIME_WAIT  
+tcp        0      0 localhost.localdo:40664 riksun.riken.go.jp:http TIME_WAIT  
+tcp6       0      0 [::]:ssh                [::]:*                  LISTEN     
+tcp6       0      0 localhost:smtp          [::]:*                  LISTEN     
+tcp6       0      0 [::]:sunrpc             [::]:*                  LISTEN     
+udp        0      0 0.0.0.0:sunrpc          0.0.0.0:*                          
+udp        0      0 0.0.0.0:851             0.0.0.0:*                          
+udp6       0      0 [::]:sunrpc             [::]:*                             
+udp6       0      0 [::]:851                [::]:*                             
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  3      [ ]         DGRAM                    8980     /run/systemd/notify
+unix  2      [ ]         DGRAM                    8982     /run/systemd/cgroups-agent
+unix  2      [ ACC ]     STREAM     LISTENING     8999     /run/systemd/journal/stdout
+unix  5      [ ]         DGRAM                    9002     /run/systemd/journal/socket
+unix  13     [ ]         DGRAM                    9004     /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING     14158    /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     24791    private/tlsmgr
+unix  2      [ ACC ]     STREAM     LISTENING     24794    private/rewrite
+unix  2      [ ACC ]     STREAM     LISTENING     24797    private/bounce
+unix  2      [ ACC ]     STREAM     LISTENING     24800    private/defer
+unix  2      [ ACC ]     STREAM     LISTENING     17047    /run/dbus/system_bus_socket
+unix  2      [ ACC ]     STREAM     LISTENING     17050    /var/run/rpcbind.sock
+unix  2      [ ACC ]     STREAM     LISTENING     13744    /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     14001    /run/lvm/lvmetad.socket
+unix  2      [ ]         DGRAM                    14031    /run/systemd/shutdownd
+unix  2      [ ACC ]     STREAM     LISTENING     24803    private/trace
+unix  2      [ ACC ]     STREAM     LISTENING     24806    private/verify
+unix  2      [ ACC ]     STREAM     LISTENING     24812    private/proxymap
+unix  2      [ ACC ]     STREAM     LISTENING     24815    private/proxywrite
+unix  2      [ ACC ]     STREAM     LISTENING     24780    public/pickup
+unix  2      [ ACC ]     SEQPACKET  LISTENING     13794    /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     24818    private/smtp
+unix  2      [ ACC ]     STREAM     LISTENING     24784    public/cleanup
+unix  2      [ ACC ]     STREAM     LISTENING     24821    private/relay
+unix  2      [ ACC ]     STREAM     LISTENING     24787    public/qmgr
+unix  2      [ ACC ]     STREAM     LISTENING     24827    private/error
+unix  2      [ ACC ]     STREAM     LISTENING     24824    public/showq
+unix  2      [ ACC ]     STREAM     LISTENING     24830    private/retry
+unix  2      [ ACC ]     STREAM     LISTENING     24833    private/discard
+unix  2      [ ACC ]     STREAM     LISTENING     24836    private/local
+unix  2      [ ACC ]     STREAM     LISTENING     24839    private/virtual
+unix  2      [ ACC ]     STREAM     LISTENING     24842    private/lmtp
+unix  2      [ ACC ]     STREAM     LISTENING     24845    private/anvil
+unix  2      [ ACC ]     STREAM     LISTENING     24848    private/scache
+unix  2      [ ACC ]     STREAM     LISTENING     24809    public/flush
+unix  2      [ ACC ]     STREAM     LISTENING     18172    /var/run/vmware/guestServicePipe
+unix  3      [ ]         STREAM     CONNECTED     24841    
+unix  3      [ ]         STREAM     CONNECTED     24825    
+unix  3      [ ]         STREAM     CONNECTED     18285    
+unix  3      [ ]         STREAM     CONNECTED     24813    
+unix  3      [ ]         STREAM     CONNECTED     24798    
+unix  3      [ ]         STREAM     CONNECTED     24782    
+unix  3      [ ]         DGRAM                    14939    
+unix  3      [ ]         STREAM     CONNECTED     14831    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    24871    
+unix  3      [ ]         STREAM     CONNECTED     24837    
+unix  2      [ ]         DGRAM                    17897    
+unix  2      [ ]         DGRAM                    17593    
+unix  3      [ ]         STREAM     CONNECTED     24817    
+unix  3      [ ]         STREAM     CONNECTED     24802    
+unix  3      [ ]         STREAM     CONNECTED     20441    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     17124    
+unix  2      [ ]         DGRAM                    16882    
+unix  3      [ ]         STREAM     CONNECTED     24834    
+unix  3      [ ]         STREAM     CONNECTED     17957    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     17242    
+unix  3      [ ]         STREAM     CONNECTED     18392    
+unix  3      [ ]         STREAM     CONNECTED     18350    
+unix  3      [ ]         STREAM     CONNECTED     24810    
+unix  3      [ ]         STREAM     CONNECTED     16892    
+unix  3      [ ]         STREAM     CONNECTED     24786    
+unix  3      [ ]         STREAM     CONNECTED     24788    
+unix  3      [ ]         STREAM     CONNECTED     17110    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     24778    
+unix  2      [ ]         DGRAM                    18177    
+unix  3      [ ]         STREAM     CONNECTED     20519    
+unix  3      [ ]         STREAM     CONNECTED     24838    
+unix  3      [ ]         STREAM     CONNECTED     17125    
+unix  3      [ ]         STREAM     CONNECTED     24814    
+unix  3      [ ]         STREAM     CONNECTED     24826    
+unix  2      [ ]         DGRAM                    19527    
+unix  3      [ ]         DGRAM                    14940    
+unix  3      [ ]         STREAM     CONNECTED     24801    
+unix  3      [ ]         STREAM     CONNECTED     17243    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     24785    
+unix  3      [ ]         STREAM     CONNECTED     17956    
+unix  2      [ ]         DGRAM                    14905    
+unix  3      [ ]         STREAM     CONNECTED     18351    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     24846    
+unix  3      [ ]         STREAM     CONNECTED     24805    
+unix  2      [ ]         DGRAM                    23967    
+unix  3      [ ]         STREAM     CONNECTED     17440    
+unix  3      [ ]         STREAM     CONNECTED     17652    
+unix  3      [ ]         STREAM     CONNECTED     24829    
+unix  3      [ ]         STREAM     CONNECTED     24822    
+unix  3      [ ]         STREAM     CONNECTED     16891    
+unix  2      [ ]         DGRAM                    17924    
+unix  3      [ ]         STREAM     CONNECTED     21526    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     24811    
+unix  3      [ ]         STREAM     CONNECTED     24796    
+unix  3      [ ]         STREAM     CONNECTED     24781    
+unix  3      [ ]         STREAM     CONNECTED     17060    
+unix  3      [ ]         STREAM     CONNECTED     14661    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     24850    
+unix  2      [ ]         DGRAM                    18410    
+unix  3      [ ]         STREAM     CONNECTED     18397    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     24835    
+unix  3      [ ]         STREAM     CONNECTED     17653    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     19526    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     24819    
+unix  3      [ ]         STREAM     CONNECTED     24804    
+unix  2      [ ]         DGRAM                    21807    
+unix  3      [ ]         STREAM     CONNECTED     24847    
+unix  3      [ ]         STREAM     CONNECTED     24832    
+unix  3      [ ]         STREAM     CONNECTED     17774    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     24823    
+unix  3      [ ]         STREAM     CONNECTED     24808    
+unix  3      [ ]         STREAM     CONNECTED     20520    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     14830    
+unix  3      [ ]         STREAM     CONNECTED     21525    
+unix  3      [ ]         STREAM     CONNECTED     24843    
+unix  3      [ ]         STREAM     CONNECTED     24828    
+unix  3      [ ]         STREAM     CONNECTED     17773    
+unix  3      [ ]         STREAM     CONNECTED     24779    
+unix  2      [ ]         DGRAM                    18366    
+unix  2      [ ]         DGRAM                    14161    
+unix  3      [ ]         STREAM     CONNECTED     24795    
+unix  3      [ ]         STREAM     CONNECTED     24840    
+unix  3      [ ]         STREAM     CONNECTED     18286    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     24849    
+unix  3      [ ]         STREAM     CONNECTED     24789    
+unix  3      [ ]         STREAM     CONNECTED     20440    
+unix  3      [ ]         STREAM     CONNECTED     19525    
+unix  3      [ ]         STREAM     CONNECTED     17109    
+unix  3      [ ]         STREAM     CONNECTED     24799    
+unix  3      [ ]         STREAM     CONNECTED     24793    
+unix  3      [ ]         STREAM     CONNECTED     24816    
+unix  2      [ ]         DGRAM                    24889    
+unix  3      [ ]         STREAM     CONNECTED     14660    
+unix  3      [ ]         STREAM     CONNECTED     24792    
+unix  3      [ ]         STREAM     CONNECTED     17441    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     17537    
+unix  3      [ ]         STREAM     CONNECTED     24831    
+unix  3      [ ]         STREAM     CONNECTED     24820    
+unix  2      [ ]         DGRAM                    20699    
+unix  3      [ ]         STREAM     CONNECTED     17126    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     17538    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    24753    
+unix  3      [ ]         STREAM     CONNECTED     24844    
+unix  3      [ ]         STREAM     CONNECTED     24807    
+
++-----------------------------------------+
+ Thu Feb 16 11:37:11 KST 2023             
+                                         
+[1m Firewall Status & Rules                  (B[m
++-----------------------------------------+
+
+[33mFirewall Status               [0m
+
+● firewalld.service - firewalld - dynamic firewall daemon
+   Loaded: loaded (/usr/lib/systemd/system/firewalld.service; enabled; vendor preset: enabled)
+   Active: active (running) since Thu 2023-02-16 11:34:45 KST; 2min 26s ago
+
+[33mFirewall Rules                [0m
+
+Chain INPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  anywhere             anywhere             ctstate RELATED,ESTABLISHED
+2    ACCEPT     all  --  anywhere             anywhere            
+3    INPUT_direct  all  --  anywhere             anywhere            
+4    INPUT_ZONES_SOURCE  all  --  anywhere             anywhere            
+5    INPUT_ZONES  all  --  anywhere             anywhere            
+
++-----------------------------------------+
+ Thu Feb 16 11:37:13 KST 2023             
+                                         
+[1m File System Status                       (B[m
++-----------------------------------------+
+
+[33mChecking file system          [0m
+
+
+[31mfsck from util-linux 2.23.2
+If you wish to check the consistency of an XFS filesystem or
+repair a damaged filesystem, see xfs_repair(8).[0m
+
+
+[33mConfirming file system status [0m
+
+
+[32mThe file system is clean      [0m
+
+
++-----------------------------------------+
+ Thu Feb 16 11:37:14 KST 2023             
+                                         
+[1m Finding parasites in /dev                (B[m
++-----------------------------------------+
+
+[33mChecking /dev                 [0m
+
+
+[32mNo parasites found[0m
+
++-----------------------------------------+
+ Thu Feb 16 11:37:15 KST 2023             
+                                         
+[1m Github upload                            (B[m
++-----------------------------------------+
+
