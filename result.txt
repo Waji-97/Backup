@@ -1266,3 +1266,560 @@ repair a damaged filesystem, see xfs_repair(8).[0m
 [1m Github upload                            (B[m
 +-----------------------------------------+
 
+   _____                         ____     _____           _       _   
+  / ____|                       |___ \   / ____|         (_)     | |  
+ | |  __ _ __ ___  _   _ _ __     __) | | (___   ___ _ __ _ _ __ | |_ 
+ | | |_ | '__/ _ \| | | | '_ \   |__ <   \___ \ / __| '__| | '_ \| __|
+ | |__| | | | (_) | |_| | |_) |  ___) |  ____) | (__| |  | | |_) | |_ 
+  \_____|_|  \___/ \__,_| .__/  |____/  |_____/ \___|_|  |_| .__/ \__| 
+                        | |                                | |        
+                        |_|                                |_|        
+
+*********************************************
+	시스템 점검 스크립트
+*********************************************
+  3조 - 건태 - 차노 - 와지 - 도영 - 상훈
+*********************************************
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:14 KST         
+                                         
+[1m OS Details                               (B[m
++-----------------------------------------+
+
+[33mOperating System               :[0m CentOS Linux 7 (Core)
+[33mHostname                       :[0m Linux-1
+[33mKernel Version                 :[0m 3.10.0-1160.81.1.el7.x86_64
+[33mOS Architecture                :[0m 32 Bit OS
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:14 KST         
+                                         
+[1m CPU Details                              (B[m
++-----------------------------------------+
+
+[33mPhysical CPUs                  :[0m 1
+[33mVirtual CPUs                   :[0m 1
+[33mCPU Cores                      :[0m 1
+[33mCPU Model                      :[0m Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
+[33mCPU Architecture               :[0m x86_64
+[33mCPU Usage Percentage           :[0m 6.2%
+[32mOK![0m
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:15 KST         
+                                         
+[1m Uptime                                   (B[m
++-----------------------------------------+
+
+[33mSystem  Uptime                 :[0m  15:15:15 up 10:27,  1 user,  load average: 0.28, 0.09, 0.07
+[33mUptime Version                 :[0m uptime from procps-ng 3.3.10
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:17 KST         
+                                         
+[1m Kernel Parameters                        (B[m
++-----------------------------------------+
+
+[33mUpdating sysctl.conf Configuration[0m
+
+[32mDone!                         [0m
+
+[33mReloading sysctl.conf Configuration[0m
+
+[32mDone!                         [0m
+
+[32mYour kernel is up to date![0m
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:21 KST         
+                                         
+[1m Recent Server Shutdown                   (B[m
++-----------------------------------------+
+
+[33mMost Recent 3 Shutdown Events [0m
+
+shutdown system down  3.10.0-1160.81.1 Tue Jan 10 14:15 - 11:00 (36+20:44)  
+shutdown system down  3.10.0-1127.el7. Tue Jan 10 14:05 - 14:05  (00:00)    
+
+No log found for the cause of the most recent shutdown.
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:22 KST         
+                                         
+[1m Recent Reboots                           (B[m
++-----------------------------------------+
+
+[33mNumber of recent reboots      [0m
+
+3
+
+[33mDetails of last reboot        [0m
+
+reboot   system boot  3.10.0-1160.81.1 Thu Feb 16 11:00 - 15:15 (1+04:14)   
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:23 KST         
+                                         
+[1m Recent Server Access                     (B[m
++-----------------------------------------+
+
+[33mRecent Server Access          [0m
+
+itbank   pts/1        192.168.1.1      Fri Feb 17 14:40 - 14:41  (00:00)    
+root     pts/0        192.168.1.1      Fri Feb 17 13:35   still logged in   
+root     pts/1        192.168.1.1      Fri Feb 17 09:01 - 13:25  (04:24)    
+root     pts/1        192.168.1.1      Thu Feb 16 13:21 - 13:21  (00:00)    
+root     pts/0        192.168.1.1      Thu Feb 16 11:34 - 11:12  (23:38)    
+
+[33mTime with Most Server Access  [0m
+
+
+      1 root     pts/1        192.168.1.1      Thu Feb 16 13:21 - 13:21  (00:00)    
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:24 KST         
+                                         
+[1m 5 Most CPU and RAM consumers             (B[m
++-----------------------------------------+
+
+[33m5 Most CPU Consuming Processes[0m 
+
+/bin/bash 0.1%
+/usr/lib/systemd/systemd 0.0%
+[kthreadd] 0.0%
+[kworker/0:0H] 0.0%
+[ksoftirqd/0] 0.0%
+
+[33m5 Most RAM Consuming Processes[0m 
+
+/usr/libexec/mysqld 8.3%
+/usr/bin/python2 2.7%
+/usr/bin/python2 1.6%
+/usr/lib/polkit-1/polkitd 1.1%
+/usr/sbin/NetworkManager 0.7%
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:25 KST         
+                                         
+[1m SWAP Memory & RAM                        (B[m
++-----------------------------------------+
+
+[33mTotal Swap Memory              :[0m 2048 MiB, 2 GiB
+[33mFree Swap Memory               :[0m 2040.7 MiB, 1.99287 GiB
+[32mOK![0m
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:26 KST         
+                                         
+[1m Installed Pacakges Updates               (B[m
++-----------------------------------------+
+
+[33mList of Packages Requiring Updates[0m
+
+[32m0[0m
+
+[32mYour packages are up to date[0m
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:33 KST         
+                                         
+[1m Checking & setting up Cronie             (B[m
++-----------------------------------------+
+
+Cronie is already your friend!
+
+[33mCurrent Cron Jobs              :[0m 0 4 * * * /root/Backup/test.sh
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:35 KST         
+                                         
+[1m Rotating Logs                            (B[m
++-----------------------------------------+
+
+[32mLogs rotated successfully!    [0m
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:36 KST         
+                                         
+[1m Disk File & Mount                        (B[m
++-----------------------------------------+
+
+[33mChecking Disk File System     [0m
+
+
+fsck from util-linux 2.23.2
+/sbin/fsck.xfs: XFS file system.
+
+[33mChecking Mount Status         [0m
+
+
+sysfs                    on  /sys                             type  sysfs        (rw,nosuid,nodev,noexec,relatime)
+proc                     on  /proc                            type  proc         (rw,nosuid,nodev,noexec,relatime)
+devtmpfs                 on  /dev                             type  devtmpfs     (rw,nosuid,size=485784k,nr_inodes=121446,mode=755)
+securityfs               on  /sys/kernel/security             type  securityfs   (rw,nosuid,nodev,noexec,relatime)
+tmpfs                    on  /dev/shm                         type  tmpfs        (rw,nosuid,nodev)
+devpts                   on  /dev/pts                         type  devpts       (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs                    on  /run                             type  tmpfs        (rw,nosuid,nodev,mode=755)
+tmpfs                    on  /sys/fs/cgroup                   type  tmpfs        (ro,nosuid,nodev,noexec,mode=755)
+cgroup                   on  /sys/fs/cgroup/systemd           type  cgroup       (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)
+pstore                   on  /sys/fs/pstore                   type  pstore       (rw,nosuid,nodev,noexec,relatime)
+cgroup                   on  /sys/fs/cgroup/freezer           type  cgroup       (rw,nosuid,nodev,noexec,relatime,freezer)
+cgroup                   on  /sys/fs/cgroup/hugetlb           type  cgroup       (rw,nosuid,nodev,noexec,relatime,hugetlb)
+cgroup                   on  /sys/fs/cgroup/net_cls,net_prio  type  cgroup       (rw,nosuid,nodev,noexec,relatime,net_prio,net_cls)
+cgroup                   on  /sys/fs/cgroup/cpuset            type  cgroup       (rw,nosuid,nodev,noexec,relatime,cpuset)
+cgroup                   on  /sys/fs/cgroup/memory            type  cgroup       (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup                   on  /sys/fs/cgroup/perf_event        type  cgroup       (rw,nosuid,nodev,noexec,relatime,perf_event)
+cgroup                   on  /sys/fs/cgroup/devices           type  cgroup       (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup                   on  /sys/fs/cgroup/cpu,cpuacct       type  cgroup       (rw,nosuid,nodev,noexec,relatime,cpuacct,cpu)
+cgroup                   on  /sys/fs/cgroup/pids              type  cgroup       (rw,nosuid,nodev,noexec,relatime,pids)
+cgroup                   on  /sys/fs/cgroup/blkio             type  cgroup       (rw,nosuid,nodev,noexec,relatime,blkio)
+configfs                 on  /sys/kernel/config               type  configfs     (rw,relatime)
+/dev/mapper/centos-root  on  /                                type  xfs          (rw,relatime,attr2,inode64,noquota)
+systemd-1                on  /proc/sys/fs/binfmt_misc         type  autofs       (rw,relatime,fd=32,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=13786)
+debugfs                  on  /sys/kernel/debug                type  debugfs      (rw,relatime)
+mqueue                   on  /dev/mqueue                      type  mqueue       (rw,relatime)
+hugetlbfs                on  /dev/hugepages                   type  hugetlbfs    (rw,relatime)
+fusectl                  on  /sys/fs/fuse/connections         type  fusectl      (rw,relatime)
+/dev/sda1                on  /boot                            type  xfs          (rw,relatime,attr2,inode64,noquota)
+tmpfs                    on  /run/user/0                      type  tmpfs        (rw,nosuid,nodev,relatime,size=99548k,mode=700)
+binfmt_misc              on  /proc/sys/fs/binfmt_misc         type  binfmt_misc  (rw,relatime)
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:37 KST         
+                                         
+[1m Disk Usage                               (B[m
++-----------------------------------------+
+
+[33mChecking Disk Usage           [0m
+
+
+Filesystem               Size  Used Avail Use% Mounted on
+devtmpfs                 475M     0  475M   0% /dev
+tmpfs                    487M     0  487M   0% /dev/shm
+tmpfs                    487M  7.6M  479M   2% /run
+tmpfs                    487M     0  487M   0% /sys/fs/cgroup
+/dev/mapper/centos-root   17G  2.6G   15G  15% /
+/dev/sda1               1014M  179M  836M  18% /boot
+tmpfs                     98M     0   98M   0% /run/user/0
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:38 KST         
+                                         
+[1m Network status + IP address              (B[m
++-----------------------------------------+
+
+[33mNetwork Status                 :[0m The network is up.
+[33mIP Address                     :[0m 192.168.1.128 
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:39 KST         
+                                         
+[1m Network Port Connections                 (B[m
++-----------------------------------------+
+
+[33mNetwork Port Connections      [0m
+
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 0.0.0.0:mysql           0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:ssh             0.0.0.0:*               LISTEN     
+tcp        0      0 localhost:smtp          0.0.0.0:*               LISTEN     
+tcp        0      0 Linux-1:44930           linux.domainesia.:https TIME_WAIT  
+tcp        0      0 Linux-1:34350           101.6.15.130:https      TIME_WAIT  
+tcp        0      0 Linux-1:45904           109.224.14.75:http      TIME_WAIT  
+tcp        0      0 Linux-1:44822           linux.domainesia.:https TIME_WAIT  
+tcp        0      0 Linux-1:45516           mirror.nevacloud.:https TIME_WAIT  
+tcp        0      0 Linux-1:39106           180.150.156.88:https    TIME_WAIT  
+tcp        0      0 Linux-1:52278           118.67.200.33:https     TIME_WAIT  
+tcp        0      0 Linux-1:55530           103.77.111.8:https      TIME_WAIT  
+tcp        0      0 Linux-1:39284           103.29.148.124:http     TIME_WAIT  
+tcp        0      0 Linux-1:34476           101.6.15.130:https      TIME_WAIT  
+tcp        0      0 Linux-1:35860           130.2.201.202.in-:https TIME_WAIT  
+tcp        0      0 Linux-1:47184           20.200.245.247:https    TIME_WAIT  
+tcp        0      0 Linux-1:38972           180.150.156.88:https    TIME_WAIT  
+tcp        0      0 Linux-1:47858           45.14.106.5:http        TIME_WAIT  
+tcp        0      0 Linux-1:39150           180.150.156.88:https    TIME_WAIT  
+tcp        0      0 Linux-1:35922           130.2.201.202.in-:https TIME_WAIT  
+tcp        0      0 Linux-1:47832           45.14.106.5:http        TIME_WAIT  
+tcp        0      0 Linux-1:55488           103.77.111.8:https      TIME_WAIT  
+tcp        0      0 Linux-1:34416           101.6.15.130:https      TIME_WAIT  
+tcp        0      0 Linux-1:58526           lb2.upic.me:https       TIME_WAIT  
+tcp        0      0 Linux-1:52208           118.67.200.33:https     TIME_WAIT  
+tcp        0      0 Linux-1:39028           180.150.156.88:https    TIME_WAIT  
+tcp        0      0 Linux-1:44856           linux.domainesia.:https TIME_WAIT  
+tcp        0      0 Linux-1:47794           45.14.106.5:http        TIME_WAIT  
+tcp        0      0 Linux-1:47880           45.14.106.5:http        TIME_WAIT  
+tcp        0      0 Linux-1:55274           39.155.141.16:http      TIME_WAIT  
+tcp        0      0 Linux-1:47876           45.14.106.5:http        TIME_WAIT  
+tcp        0      0 Linux-1:39414           103.29.148.124:http     TIME_WAIT  
+tcp        0      0 Linux-1:55388           103.77.111.8:https      TIME_WAIT  
+tcp        0      0 Linux-1:47190           20.200.245.247:https    TIME_WAIT  
+tcp        0      0 Linux-1:34446           101.6.15.130:https      TIME_WAIT  
+tcp        0      0 Linux-1:46074           109.224.14.75:http      TIME_WAIT  
+tcp        0      0 Linux-1:45982           118.67.201.33:https     TIME_WAIT  
+tcp        0      0 Linux-1:55394           39.155.141.16:http      TIME_WAIT  
+tcp        0      0 Linux-1:58624           lb2.upic.me:https       TIME_WAIT  
+tcp        0      0 Linux-1:58662           lb2.upic.me:https       TIME_WAIT  
+tcp        0      0 Linux-1:58596           lb2.upic.me:https       TIME_WAIT  
+tcp        0      0 Linux-1:47856           45.14.106.5:http        TIME_WAIT  
+tcp        0      0 Linux-1:bacnet          45.14.106.5:http        TIME_WAIT  
+tcp        0      0 Linux-1:47836           45.14.106.5:http        TIME_WAIT  
+tcp        0      0 Linux-1:34502           101.6.15.130:https      TIME_WAIT  
+tcp        0      0 Linux-1:46004           109.224.14.75:http      TIME_WAIT  
+tcp        0      0 Linux-1:44988           linux.domainesia.:https TIME_WAIT  
+tcp        0      0 Linux-1:45650           mirror.nevacloud.:https TIME_WAIT  
+tcp        0      0 Linux-1:45540           mirror.nevacloud.:https TIME_WAIT  
+tcp        0      0 Linux-1:46034           109.224.14.75:http      TIME_WAIT  
+tcp        0      0 Linux-1:35796           113.29.189.165:http     TIME_WAIT  
+tcp        0      0 Linux-1:39066           180.150.156.88:https    TIME_WAIT  
+tcp        0      0 Linux-1:35910           130.2.201.202.in-:https TIME_WAIT  
+tcp        0      0 Linux-1:47188           20.200.245.247:https    TIME_WAIT  
+tcp        0      0 Linux-1:58692           lb2.upic.me:https       TIME_WAIT  
+tcp        0      0 Linux-1:55260           39.155.141.16:http      TIME_WAIT  
+tcp        0      0 Linux-1:47186           20.200.245.247:https    TIME_WAIT  
+tcp        0      0 Linux-1:45934           109.224.14.75:http      TIME_WAIT  
+tcp        0      0 Linux-1:39126           180.150.156.88:https    TIME_WAIT  
+tcp        0      0 Linux-1:34388           101.6.15.130:https      TIME_WAIT  
+tcp        0      0 Linux-1:39420           103.29.148.124:http     TIME_WAIT  
+tcp        0      0 Linux-1:39354           103.29.148.124:http     TIME_WAIT  
+tcp        0      0 Linux-1:55370           39.155.141.16:http      TIME_WAIT  
+tcp        0      0 Linux-1:39364           103.29.148.124:http     TIME_WAIT  
+tcp        0      0 Linux-1:47770           45.14.106.5:http        TIME_WAIT  
+tcp        0      0 Linux-1:47900           45.14.106.5:http        TIME_WAIT  
+tcp        0      0 Linux-1:44948           linux.domainesia.:https TIME_WAIT  
+tcp        0      0 Linux-1:47764           45.14.106.5:http        TIME_WAIT  
+tcp        0      0 Linux-1:55434           103.77.111.8:https      TIME_WAIT  
+tcp        0      0 Linux-1:45906           118.67.201.33:https     TIME_WAIT  
+tcp        0      0 Linux-1:55490           103.77.111.8:https      TIME_WAIT  
+tcp        0      0 Linux-1:39302           103.29.148.124:http     TIME_WAIT  
+tcp        0      0 Linux-1:45610           mirror.nevacloud.:https TIME_WAIT  
+tcp        0      0 Linux-1:35964           130.2.201.202.in-:https TIME_WAIT  
+tcp        0      0 Linux-1:55418           103.77.111.8:https      TIME_WAIT  
+tcp        0      0 Linux-1:47788           45.14.106.5:http        TIME_WAIT  
+tcp        0      0 Linux-1:46000           109.224.14.75:http      TIME_WAIT  
+tcp        0      0 Linux-1:45938           109.224.14.75:http      TIME_WAIT  
+tcp        0      0 Linux-1:47852           45.14.106.5:http        TIME_WAIT  
+tcp        0      0 Linux-1:52310           118.67.200.33:https     TIME_WAIT  
+tcp        0      0 Linux-1:45828           118.67.201.33:https     TIME_WAIT  
+tcp        0      0 Linux-1:35798           130.2.201.202.in-:https TIME_WAIT  
+tcp        0      0 Linux-1:55322           39.155.141.16:http      TIME_WAIT  
+tcp        0      0 Linux-1:55340           39.155.141.16:http      TIME_WAIT  
+tcp        0      0 Linux-1:45582           mirror.nevacloud.:https TIME_WAIT  
+tcp        0      0 Linux-1:47766           45.14.106.5:http        TIME_WAIT  
+tcp        0      0 Linux-1:35840           130.2.201.202.in-:https TIME_WAIT  
+tcp        0      0 Linux-1:58578           lb2.upic.me:https       TIME_WAIT  
+tcp        0      0 Linux-1:ssh             192.168.1.1:7769        ESTABLISHED
+tcp        0      0 Linux-1:47830           45.14.106.5:http        TIME_WAIT  
+tcp        0      0 Linux-1:eba             mirror.nevacloud.:https TIME_WAIT  
+tcp6       0      0 [::]:http               [::]:*                  LISTEN     
+tcp6       0      0 [::]:ssh                [::]:*                  LISTEN     
+tcp6       0      0 localhost:smtp          [::]:*                  LISTEN     
+tcp6       0      0 [::]:https              [::]:*                  LISTEN     
+udp        0      0 localhost:323           0.0.0.0:*                          
+udp6       0      0 localhost:323           [::]:*                             
+raw6       0      0 [::]:ipv6-icmp          [::]:*                  7          
+Active UNIX domain sockets (servers and established)
+Proto RefCnt Flags       Type       State         I-Node   Path
+unix  2      [ ACC ]     STREAM     LISTENING     147121   public/qmgr
+unix  3      [ ]         DGRAM                    8980     /run/systemd/notify
+unix  2      [ ]         DGRAM                    8982     /run/systemd/cgroups-agent
+unix  2      [ ACC ]     STREAM     LISTENING     9000     /run/systemd/journal/stdout
+unix  5      [ ]         DGRAM                    9003     /run/systemd/journal/socket
+unix  14     [ ]         DGRAM                    9005     /dev/log
+unix  2      [ ACC ]     STREAM     LISTENING     13617    /run/systemd/private
+unix  2      [ ACC ]     STREAM     LISTENING     147143   public/flush
+unix  2      [ ACC ]     STREAM     LISTENING     16703    /run/dbus/system_bus_socket
+unix  2      [ ACC ]     SEQPACKET  LISTENING     13635    /run/udev/control
+unix  2      [ ACC ]     STREAM     LISTENING     147158   public/showq
+unix  2      [ ACC ]     STREAM     LISTENING     147125   private/tlsmgr
+unix  2      [ ACC ]     STREAM     LISTENING     147128   private/rewrite
+unix  2      [ ACC ]     STREAM     LISTENING     42046    /var/lib/mysql/mysql.sock
+unix  2      [ ACC ]     STREAM     LISTENING     13921    /run/lvm/lvmpolld.socket
+unix  2      [ ACC ]     STREAM     LISTENING     13930    /run/lvm/lvmetad.socket
+unix  2      [ ACC ]     STREAM     LISTENING     17797    /var/run/vmware/guestServicePipe
+unix  2      [ ]         DGRAM                    17078    /var/run/chrony/chronyd.sock
+unix  2      [ ACC ]     STREAM     LISTENING     147118   public/cleanup
+unix  2      [ ACC ]     STREAM     LISTENING     147114   public/pickup
+unix  2      [ ]         DGRAM                    13781    /run/systemd/shutdownd
+unix  2      [ ACC ]     STREAM     LISTENING     147131   private/bounce
+unix  2      [ ACC ]     STREAM     LISTENING     147134   private/defer
+unix  2      [ ACC ]     STREAM     LISTENING     147137   private/trace
+unix  2      [ ACC ]     STREAM     LISTENING     147140   private/verify
+unix  2      [ ACC ]     STREAM     LISTENING     147146   private/proxymap
+unix  2      [ ACC ]     STREAM     LISTENING     147149   private/proxywrite
+unix  2      [ ACC ]     STREAM     LISTENING     147152   private/smtp
+unix  2      [ ACC ]     STREAM     LISTENING     147155   private/relay
+unix  2      [ ACC ]     STREAM     LISTENING     147161   private/error
+unix  2      [ ACC ]     STREAM     LISTENING     147164   private/retry
+unix  2      [ ACC ]     STREAM     LISTENING     147167   private/discard
+unix  2      [ ACC ]     STREAM     LISTENING     147170   private/local
+unix  2      [ ACC ]     STREAM     LISTENING     147173   private/virtual
+unix  2      [ ACC ]     STREAM     LISTENING     147176   private/lmtp
+unix  2      [ ACC ]     STREAM     LISTENING     147179   private/anvil
+unix  2      [ ACC ]     STREAM     LISTENING     147182   private/scache
+unix  3      [ ]         STREAM     CONNECTED     147175   
+unix  3      [ ]         STREAM     CONNECTED     147172   
+unix  2      [ ]         DGRAM                    147087   
+unix  3      [ ]         STREAM     CONNECTED     147156   
+unix  3      [ ]         STREAM     CONNECTED     147141   
+unix  3      [ ]         STREAM     CONNECTED     14616    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     147133   
+unix  2      [ ]         DGRAM                    17311    
+unix  2      [ ]         DGRAM                    17063    
+unix  3      [ ]         STREAM     CONNECTED     18012    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     147160   
+unix  3      [ ]         STREAM     CONNECTED     147145   
+unix  3      [ ]         STREAM     CONNECTED     21211    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     17223    
+unix  3      [ ]         STREAM     CONNECTED     147115   
+unix  3      [ ]         STREAM     CONNECTED     131105   /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     147132   
+unix  3      [ ]         STREAM     CONNECTED     20365    
+unix  3      [ ]         STREAM     CONNECTED     17568    
+unix  3      [ ]         STREAM     CONNECTED     147153   
+unix  3      [ ]         STREAM     CONNECTED     147129   
+unix  3      [ ]         STREAM     CONNECTED     16551    
+unix  3      [ ]         STREAM     CONNECTED     17963    
+unix  3      [ ]         STREAM     CONNECTED     17314    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     17224    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    146303   
+unix  2      [ ]         DGRAM                    20412    
+unix  3      [ ]         STREAM     CONNECTED     17385    
+unix  2      [ ]         DGRAM                    17986    
+unix  2      [ ]         DGRAM                    69788    
+unix  3      [ ]         STREAM     CONNECTED     16946    
+unix  3      [ ]         STREAM     CONNECTED     147144   
+unix  3      [ ]         STREAM     CONNECTED     147122   
+unix  2      [ ]         DGRAM                    14682    
+unix  3      [ ]         STREAM     CONNECTED     18011    
+unix  3      [ ]         STREAM     CONNECTED     147157   
+unix  3      [ ]         STREAM     CONNECTED     17038    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     147183   
+unix  3      [ ]         STREAM     CONNECTED     147148   
+unix  3      [ ]         STREAM     CONNECTED     147174   
+unix  3      [ ]         STREAM     CONNECTED     131103   
+unix  3      [ ]         STREAM     CONNECTED     19154    
+unix  2      [ ]         DGRAM                    19140    
+unix  3      [ ]         STREAM     CONNECTED     147119   
+unix  3      [ ]         STREAM     CONNECTED     147165   
+unix  3      [ ]         STREAM     CONNECTED     21210    
+unix  3      [ ]         STREAM     CONNECTED     19155    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     147112   
+unix  3      [ ]         STREAM     CONNECTED     17569    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     147180   
+unix  3      [ ]         STREAM     CONNECTED     20198    
+unix  3      [ ]         STREAM     CONNECTED     17271    
+unix  3      [ ]         STREAM     CONNECTED     147168   
+unix  3      [ ]         STREAM     CONNECTED     147154   
+unix  3      [ ]         STREAM     CONNECTED     147139   
+unix  3      [ ]         DGRAM                    14777    
+unix  2      [ ]         DGRAM                    17794    
+unix  3      [ ]         STREAM     CONNECTED     17037    
+unix  3      [ ]         STREAM     CONNECTED     147177   
+unix  2      [ ]         DGRAM                    17647    
+unix  3      [ ]         STREAM     CONNECTED     17899    
+unix  3      [ ]         STREAM     CONNECTED     17212    
+unix  3      [ ]         STREAM     CONNECTED     147113   
+unix  3      [ ]         STREAM     CONNECTED     147181   
+unix  3      [ ]         STREAM     CONNECTED     147130   
+unix  3      [ ]         STREAM     CONNECTED     147162   
+unix  3      [ ]         STREAM     CONNECTED     147147   
+unix  3      [ ]         STREAM     CONNECTED     17094    
+unix  3      [ ]         STREAM     CONNECTED     147116   
+unix  3      [ ]         STREAM     CONNECTED     14615    
+unix  3      [ ]         STREAM     CONNECTED     147166   
+unix  3      [ ]         STREAM     CONNECTED     147151   
+unix  3      [ ]         STREAM     CONNECTED     147135   
+unix  3      [ ]         STREAM     CONNECTED     17900    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     147171   
+unix  2      [ ]         DGRAM                    13955    
+unix  2      [ ]         DGRAM                    17676    
+unix  3      [ ]         STREAM     CONNECTED     16550    
+unix  3      [ ]         STREAM     CONNECTED     147138   
+unix  3      [ ]         STREAM     CONNECTED     17272    /run/systemd/journal/stdout
+unix  3      [ ]         DGRAM                    14778    
+unix  3      [ ]         STREAM     CONNECTED     147169   
+unix  3      [ ]         STREAM     CONNECTED     147120   
+unix  3      [ ]         STREAM     CONNECTED     147159   
+unix  3      [ ]         STREAM     CONNECTED     147136   
+unix  3      [ ]         STREAM     CONNECTED     17964    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     14515    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     147178   
+unix  3      [ ]         STREAM     CONNECTED     17096    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     147142   
+unix  3      [ ]         STREAM     CONNECTED     147123   
+unix  2      [ ]         DGRAM                    147224   
+unix  3      [ ]         STREAM     CONNECTED     17213    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     17095    
+unix  3      [ ]         STREAM     CONNECTED     147127   
+unix  3      [ ]         STREAM     CONNECTED     20366    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     147163   
+unix  3      [ ]         STREAM     CONNECTED     147184   
+unix  2      [ ]         DGRAM                    147206   
+unix  3      [ ]         STREAM     CONNECTED     17386    /run/dbus/system_bus_socket
+unix  3      [ ]         STREAM     CONNECTED     20199    /run/systemd/journal/stdout
+unix  2      [ ]         DGRAM                    16541    
+unix  3      [ ]         STREAM     CONNECTED     147126   
+unix  3      [ ]         STREAM     CONNECTED     17313    
+unix  3      [ ]         STREAM     CONNECTED     14514    
+unix  3      [ ]         STREAM     CONNECTED     147150   
+unix  2      [ ]         DGRAM                    18111    
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:43 KST         
+                                         
+[1m Firewall Status & Rules                  (B[m
++-----------------------------------------+
+
+[33mFirewall Status               [0m
+
+● firewalld.service - firewalld - dynamic firewall daemon
+   Loaded: loaded (/usr/lib/systemd/system/firewalld.service; enabled; vendor preset: enabled)
+   Active: active (running) since 목 2023-02-16 11:00:31 KST; 1 day 4h ago
+
+[33mFirewall Rules                [0m
+
+Chain INPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  anywhere             anywhere             ctstate RELATED,ESTABLISHED
+2    ACCEPT     all  --  anywhere             anywhere            
+3    INPUT_direct  all  --  anywhere             anywhere            
+4    INPUT_ZONES_SOURCE  all  --  anywhere             anywhere            
+5    INPUT_ZONES  all  --  anywhere             anywhere            
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:44 KST         
+                                         
+[1m File System Status                       (B[m
++-----------------------------------------+
+
+[33mChecking file system          [0m
+
+
+[31mfsck from util-linux 2.23.2
+If you wish to check the consistency of an XFS filesystem or
+repair a damaged filesystem, see xfs_repair(8).[0m
+
+
+[33mConfirming file system status [0m
+
+
+[32mThe file system is clean      [0m
+
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:45 KST         
+                                         
+[1m Finding parasites in /dev                (B[m
++-----------------------------------------+
+
+[33mChecking /dev                 [0m
+
+
+[32mNo parasites found[0m
+
++-----------------------------------------+
+ 2023. 02. 17. (금) 15:15:46 KST         
+                                         
+[1m Github upload                            (B[m
++-----------------------------------------+
+
